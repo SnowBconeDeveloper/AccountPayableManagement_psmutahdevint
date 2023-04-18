@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe901ac85f75ae950ee5fad84bc086d6f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>bd3c2eae875f9d502a18b846dabb35ba</scope_name>
+        <serialized_content>{"FlowDesigner:FDe901ac85f75ae950ee5fad84bc086d6f":{"line_amount":{"amount":"String","amount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Amount\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"5da2cbfb-ad4d-495f-bdd1-6af4d1cd463d\"}"},"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"4e64e8b0-17ea-45c5-97ee-f657ac8a9833\"}"}},"line_amount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Line Amount\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ddaaff93-5808-4d5c-9e32-f91a87954b19\"}"}},"FlowDesigner:FDe901ac85f75ae950ee5fad84bc086d6f.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe901ac85f75ae950ee5fad84bc086d6f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Currency Fields\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"0abc2dd8-caeb-4077-a33a-e3ba169d90fe\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2023-04-17 13:24:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad01ac85475ae950c26f8945d36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDe901ac85f75ae950ee5fad84bc086d6f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_update_name>sys_complex_object_ad01ac85475ae950c26f8945d36d436f</sys_update_name>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-17 13:24:51</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

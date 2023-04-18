@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5c028ed55f33d110e99e1a395465fb1b</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>bd3c2eae875f9d502a18b846dabb35ba</scope_name>
+        <serialized_content>{"FlowDesigner:FD5c028ed55f33d110e99e1a395465fb1b":{"invoice_amount":{"amount":"String","amount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Amount\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d98e0ac8-5659-453b-aa40-712205c47da4\"}"},"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Code\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"af735b95-edfe-4047-9956-29efb6a4c3f6\"}"}},"invoice_amount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Invoice Amount\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c2bed7c0-e9ff-472a-af93-f665384c73ca\"}"}},"FlowDesigner:FD5c028ed55f33d110e99e1a395465fb1b.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Currency Fields\",\"mandatory\":\"false\",\"uiUniqueId\":\"4b766060-14b3-41fa-8f60-f155c277f9b0\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD5c028ed55f33d110e99e1a395465fb1b\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Akash</sys_created_by>
+        <sys_created_on>2022-12-15 08:30:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10028ed58733d110c04eb259dabb351c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD5c028ed55f33d110e99e1a395465fb1b</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_update_name>sys_complex_object_10028ed58733d110c04eb259dabb351c</sys_update_name>
+        <sys_updated_by>Akash</sys_updated_by>
+        <sys_updated_on>2022-12-15 08:40:06</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

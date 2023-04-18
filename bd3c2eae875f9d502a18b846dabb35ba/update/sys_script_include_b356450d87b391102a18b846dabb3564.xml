@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_apm_sap_int.ApmSapUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ApmSapUtils</name>
+        <script><![CDATA[var ApmSapUtils = Class.create();
+ApmSapUtils.prototype = {
+    initialize: function() {},
+    getCurrencyFields: function(tablename, sysId) {
+        var rec = new GlideRecord(tablename);
+        rec.get(sysId);
+        var fields = rec.getElements();
+        var currencyFields = {};
+        fields.forEach(function(element) {
+            var type = element.getED().getInternalType();
+            if (type == "currency2") {
+                var sys_id = element.toString();
+                if (sys_id) {
+                    var obj = {};
+                    var grec = element.getRefRecord();
+                    obj['amount'] = grec.reference_amount.toString();
+                    obj['code'] = grec.reference_currency.toString();
+                    currencyFields[element.getName()] = obj;
+                }
+            }
+        });
+        return currencyFields;
+    },
+    checkMandatoryFields: function(mandatoryFieldsList) {
+        var emptyMandatoryFieldsList = [];
+        Object.keys(mandatoryFieldsList).forEach(function(key) {
+            if (gs.nil(mandatoryFieldsList[key])) {
+                emptyMandatoryFieldsList.push(key);
+            }
+        });
+        emptyMandatoryFieldsList = emptyMandatoryFieldsList.join(", ");
+        return emptyMandatoryFieldsList;
+    },
+    convertDateToSAPFormat: function(dte) {
+        dte = dte.split('-');
+        var sapDate = '';
+        for (k = 0; k < dte.length; k++) {
+            sapDate = sapDate + dte[k].toString();
+        }
+        return sapDate.toString();
+    },
+    divideIRLinesBasedOnCostCenter: function(irlRec, irObj) {
+        var quantity = irObj.QUANTITY;
+        var unitPrice = irObj.ITEM_AMOUNT/irObj.QUANTITY;
+        var poItemNumbers = irlRec.order_line.erp_line_number.split(',');
+        var irLines = [];
+        var grec = new GlideRecord('sn_shop_cost_allocation');
+        grec.addQuery('order_line.sys_id', irlRec.order_line.sys_id.toString());
+        grec.query();
+        if (grec.hasNext()) {
+            if (poItemNumbers.length == grec.getRowCount()) {
+				var i = 0;
+                while (grec.next()) {
+                    var allocPercentage = grec.allocation_percentage;
+                    var tempIRL = irObj;
+                    tempIRL['QUANTITY'] = (quantity * (allocPercentage / 100)).toFixed(3);
+                    tempIRL['ITEM_AMOUNT'] = unitPrice * tempIRL['QUANTITY'];
+                    tempIRL['PO_ITEM'] = poItemNumbers[i];
+                    i++;
+                    irLines.push((tempIRL));
+                }
+            }
+        } else {
+            irLines.push(irObj);
+        }
+        return irLines;
+    },
+    checkPadding: function(stringInteger, stringlength) {
+        var fieldValue = stringInteger.toString();
+        while (fieldValue.length < stringlength)
+            fieldValue = "0" + fieldValue;
+        return fieldValue;
+    },
+	executeAction: function(actionName, actionInputs) {
+        try {
+            var result = sn_fd.FlowAPI.getRunner().action(actionName).inForeground().withInputs(actionInputs).run();
+            var outputs = result.getOutputs();
+            if (!outputs['__action_status__']['code']) {
+                return outputs;
+            } else {
+                var contextID = result.getContextId();
+                throw new Error(outputs['__action_status__']['message']);
+            }
+        } catch (er) {
+            throw new Error(er.getMessage() + 'in Action :' + actionName);
+        }
+    },
+	getGlideRecords: function(tableName, queryParams, orderByParams) {
+        var glideRec = new GlideRecord(tableName);
+        if (!(gs.nil(queryParams))) {
+            Object.keys(queryParams).forEach(function(key) {
+                glideRec.addQuery(key.toString(), queryParams[key].toString());
+            });
+        }
+        if (!(gs.nil(orderByParams))) {
+            orderByParams.forEach(function(param) {
+                glideRec.orderBy(param.toString());
+            });
+        }
+        glideRec.query();
+        return glideRec;
+    },
+	checkIfIntegrationErrorExistsForIR: function(ir_sys_id) {
+        var integrationErrorRecs = this.getGlideRecords('sn_shop_erp_error_task', {
+            invoice: ir_sys_id.toString(),
+            subtype: 'invoice',
+            state: 1
+        });
+        if (integrationErrorRecs.hasNext()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    type: 'ApmSapUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>satya</sys_created_by>
+        <sys_created_on>2022-12-14 09:32:05</sys_created_on>
+        <sys_id>b356450d87b391102a18b846dabb3564</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>ApmSapUtils</sys_name>
+        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_update_name>sys_script_include_b356450d87b391102a18b846dabb3564</sys_update_name>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-17 12:52:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

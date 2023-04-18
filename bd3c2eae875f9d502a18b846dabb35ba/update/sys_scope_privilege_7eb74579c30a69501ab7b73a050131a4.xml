@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2023-04-07 13:53:43</sys_created_on>
+        <sys_id>7eb74579c30a69501ab7b73a050131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_shop_erp_error_task</sys_name>
+        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_update_name>sys_scope_privilege_7eb74579c30a69501ab7b73a050131a4</sys_update_name>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-07 13:53:43</sys_updated_on>
+        <target_name>sn_shop_erp_error_task</target_name>
+        <target_scope display_value="Procurement Common Architecture">45f917bd533323007388ddeeff7b12b6</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
