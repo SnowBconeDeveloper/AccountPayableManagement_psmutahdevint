@@ -49,25 +49,43 @@ ApmSapUtils.prototype = {
         return sapDate.toString();
     },
     divideIRLinesBasedOnCostCenter: function(irlRec, irObj) {
-        var quantity = irObj.QUANTITY;
-        var unitPrice = irObj.ITEM_AMOUNT/irObj.QUANTITY;
-        var poItemNumbers = irlRec.order_line.erp_line_number.split(',');
+        var quantity = irObj.QUANTITY.toString().replace(/\D/g,'');
+        var unitPrice = irObj.ITEM_AMOUNT / irObj.QUANTITY;
+        var erp_line_number = '';
+        if (irlRec.order_line.purchase_order.blanket_order) {
+            erp_line_number = this.getERPblanketLineNumberForIR(irlRec);
+        }else{
+			erp_line_number = irObj['PO_ITEM'];
+		}
+		var isServiceIr = irlRec.order_line.product_type == 'service' ? true : false;
+
+		if(isServiceIr){
+			var entrySheetNumber = this.getEntrySheetNumber(irlRec);
+			if(gs.nil(entrySheetNumber)){
+				throw new Error('ERP number cannot be empty for respective receipt');
+			}
+			var entrySheetNumbers = entrySheetNumber.split(',');
+		}
+        var poItemNumbers = erp_line_number.split(',');
         var irLines = [];
         var grec = new GlideRecord('sn_shop_cost_allocation');
         grec.addQuery('order_line.sys_id', irlRec.order_line.sys_id.toString());
+        grec.orderBy('cost_center');
         grec.query();
         if (grec.hasNext()) {
-            if (poItemNumbers.length == grec.getRowCount()) {
-				var i = 0;
-                while (grec.next()) {
-                    var allocPercentage = grec.allocation_percentage;
-                    var tempIRL = irObj;
-                    tempIRL['QUANTITY'] = (quantity * (allocPercentage / 100)).toFixed(3);
-                    tempIRL['ITEM_AMOUNT'] = unitPrice * tempIRL['QUANTITY'];
-                    tempIRL['PO_ITEM'] = poItemNumbers[i];
-                    i++;
-                    irLines.push((tempIRL));
-                }
+            var i = 0;
+            while (grec.next()) {
+                var allocPercentage = grec.allocation_percentage;
+                var tempIRL = irObj;
+                tempIRL['QUANTITY'] = (quantity * (allocPercentage / 100)).toFixed(3);
+                tempIRL['ITEM_AMOUNT'] = unitPrice * tempIRL['QUANTITY'];
+                tempIRL['PO_ITEM'] = poItemNumbers[i];
+				if(isServiceIr){
+					tempIRL['SHEET_NO'] = entrySheetNumbers[i];
+					tempIRL['SHEET_ITEM'] = '00010';
+				}
+                i++;
+                irLines.push((JSON.parse(JSON.stringify(tempIRL))));
             }
         } else {
             irLines.push(irObj);
@@ -80,7 +98,7 @@ ApmSapUtils.prototype = {
             fieldValue = "0" + fieldValue;
         return fieldValue;
     },
-	executeAction: function(actionName, actionInputs) {
+    executeAction: function(actionName, actionInputs) {
         try {
             var result = sn_fd.FlowAPI.getRunner().action(actionName).inForeground().withInputs(actionInputs).run();
             var outputs = result.getOutputs();
@@ -94,7 +112,7 @@ ApmSapUtils.prototype = {
             throw new Error(er.getMessage() + 'in Action :' + actionName);
         }
     },
-	getGlideRecords: function(tableName, queryParams, orderByParams) {
+    getGlideRecords: function(tableName, queryParams, orderByParams) {
         var glideRec = new GlideRecord(tableName);
         if (!(gs.nil(queryParams))) {
             Object.keys(queryParams).forEach(function(key) {
@@ -109,7 +127,7 @@ ApmSapUtils.prototype = {
         glideRec.query();
         return glideRec;
     },
-	checkIfIntegrationErrorExistsForIR: function(ir_sys_id) {
+    checkIfIntegrationErrorExistsForIR: function(ir_sys_id) {
         var integrationErrorRecs = this.getGlideRecords('sn_shop_erp_error_task', {
             invoice: ir_sys_id.toString(),
             subtype: 'invoice',
@@ -121,19 +139,56 @@ ApmSapUtils.prototype = {
             return false;
         }
     },
+    getERPblanketLineNumberForIR: function(irlRec) {
+        var supplierProduct = irlRec.order_line.supplier_product;
+        var blanketPO = irlRec.invoice.purchase_order.blanket_order;
+        // var blanketPOL = new GlideRecord('sn_shop_purchase_order_line');
+        // blanketPOL.addQuery('purchase_order.sys_id',blanketPO);
+        // blanketPOL.addQuery('supplier_product.sys_id',supplierProduct);
+        // blanketPOL.query();
+        // blanketPOL.next();
+        var blanketPOL = new sn_apm_sap_int.ApmSapUtils().getGlideRecords('sn_shop_purchase_order_line', {
+            purchase_order: blanketPO,
+            supplier_product: supplierProduct
+        });
+        if (blanketPOL.next()) {
+            return blanketPOL.erp_line_number;
+        }
+    },
+
+	getEntrySheetNumber: function(irlRec){
+    var pol = irlRec.order_line;
+    var allInvoicesOfPOL = this.getGlideRecords('sn_shop_invoice_line',{order_line:pol},['number']);
+    var currentIrPosition = 1;
+    while(allInvoicesOfPOL.next()){
+        if(allInvoicesOfPOL.number == irlRec.number){
+        break;
+        }
+        else
+        currentIrPosition++;
+    }
+
+    var allReceiptOfPOL = this.getGlideRecords('sn_shop_receipt',{purchase_order_line:pol.sys_id},['number']);
+    var i=0;
+    while(i<currentIrPosition){
+        allReceiptOfPOL.next();
+        i++;
+    }
+    return allReceiptOfPOL.erp_gr_number;
+},
     type: 'ApmSapUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-14 09:32:05</sys_created_on>
         <sys_id>b356450d87b391102a18b846dabb3564</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>ApmSapUtils</sys_name>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name>sys_script_include_b356450d87b391102a18b846dabb3564</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 12:52:10</sys_updated_on>
+        <sys_updated_on>2023-04-22 06:02:11</sys_updated_on>
     </sys_script_include>
 </record_update>
