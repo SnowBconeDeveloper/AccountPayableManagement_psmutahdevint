@@ -9,26 +9,35 @@
         <name>ApmSapUtils</name>
         <script><![CDATA[var ApmSapUtils = Class.create();
 ApmSapUtils.prototype = {
-    initialize: function() {},
+    initialize: function() {
+        this.ENTRY_SHEET_ITEM_NUMBER = "00010";
+        this.PADDING_VALUE = "0";
+    },
     getCurrencyFields: function(tablename, sysId) {
-        var rec = new GlideRecord(tablename);
-        rec.get(sysId);
-        var fields = rec.getElements();
-        var currencyFields = {};
-        fields.forEach(function(element) {
-            var type = element.getED().getInternalType();
-            if (type == "currency2") {
-                var sys_id = element.toString();
-                if (sys_id) {
-                    var obj = {};
-                    var grec = element.getRefRecord();
-                    obj['amount'] = grec.reference_amount.toString();
-                    obj['code'] = grec.reference_currency.toString();
-                    currencyFields[element.getName()] = obj;
+        try {
+            var rec = new GlideRecord(tablename);
+            rec.get(sysId);
+            var fields = rec.getElements();
+            var currencyFields = {};
+            fields.forEach(function(element) {
+                var type = element.getED().getInternalType();
+                if (type == "currency2") {
+                    var sys_id = element.toString();
+                    if (sys_id) {
+                        var obj = {};
+                        var grec = element.getRefRecord();
+                        if (grec.isValidRecord()) {
+                            obj['amount'] = grec.reference_amount.toString();
+                            obj['code'] = grec.reference_currency.toString();
+                            currencyFields[element.getName()] = obj;
+                        }
+                    }
                 }
-            }
-        });
-        return currencyFields;
+            });
+            return currencyFields;
+        } catch (e) {
+            throw new Error(e);
+        }
     },
     checkMandatoryFields: function(mandatoryFieldsList) {
         var emptyMandatoryFieldsList = [];
@@ -49,42 +58,43 @@ ApmSapUtils.prototype = {
         return sapDate.toString();
     },
     divideIRLinesBasedOnCostCenter: function(irlRec, irObj) {
-        var quantity = irObj.QUANTITY.toString().replace(/\D/g,'');
-        var unitPrice = irObj.ITEM_AMOUNT / irObj.QUANTITY;
+        var quantity = irObj.QUANTITY.toString().replace(/\D/g, '');
+        quantity = parseInt(quantity, 10);
+        var unitPrice = irObj.ITEM_AMOUNT / quantity;
         var erp_line_number = '';
         if (irlRec.order_line.purchase_order.blanket_order) {
             erp_line_number = this.getERPblanketLineNumberForIR(irlRec);
-        }else{
-			erp_line_number = irObj['PO_ITEM'];
-		}
-		var isServiceIr = irlRec.order_line.product_type == 'service' ? true : false;
+        } else {
+            erp_line_number = irObj['PO_ITEM'];
+        }
+        var isServiceIr = irlRec.order_line.product_type == 'service' ? true : false;
 
-		if(isServiceIr){
-			var entrySheetNumber = this.getEntrySheetNumber(irlRec);
-			if(gs.nil(entrySheetNumber)){
-				throw new Error('ERP number cannot be empty for respective receipt');
-			}
-			var entrySheetNumbers = entrySheetNumber.split(',');
-		}
+        if (isServiceIr) {
+            var entrySheetNumber = this.getEntrySheetNumber(irlRec);
+            if (gs.nil(entrySheetNumber)) {
+                throw new Error('ERP number cannot be empty for respective receipt');
+            }
+            var entrySheetNumbers = entrySheetNumber.split(',');
+        }
         var poItemNumbers = erp_line_number.split(',');
         var irLines = [];
         var grec = new GlideRecord('sn_shop_cost_allocation');
-        grec.addQuery('order_line.sys_id', irlRec.order_line.sys_id.toString());
+        grec.addQuery('order_line', irlRec.order_line.sys_id.toString());
         grec.orderBy('cost_center');
         grec.query();
         if (grec.hasNext()) {
-            var i = 0;
+            var index = 0;
             while (grec.next()) {
                 var allocPercentage = grec.allocation_percentage;
                 var tempIRL = irObj;
                 tempIRL['QUANTITY'] = (quantity * (allocPercentage / 100)).toFixed(3);
                 tempIRL['ITEM_AMOUNT'] = unitPrice * tempIRL['QUANTITY'];
-                tempIRL['PO_ITEM'] = poItemNumbers[i];
-				if(isServiceIr){
-					tempIRL['SHEET_NO'] = entrySheetNumbers[i];
-					tempIRL['SHEET_ITEM'] = '00010';
-				}
-                i++;
+                tempIRL['PO_ITEM'] = poItemNumbers[index];
+                if (isServiceIr) {
+                    tempIRL['SHEET_NO'] = entrySheetNumbers[index];
+                    tempIRL['SHEET_ITEM'] = this.ENTRY_SHEET_ITEM_NUMBER;
+                }
+                index++;
                 irLines.push((JSON.parse(JSON.stringify(tempIRL))));
             }
         } else {
@@ -95,7 +105,7 @@ ApmSapUtils.prototype = {
     checkPadding: function(stringInteger, stringlength) {
         var fieldValue = stringInteger.toString();
         while (fieldValue.length < stringlength)
-            fieldValue = "0" + fieldValue;
+            fieldValue = this.PADDING_VALUE + fieldValue;
         return fieldValue;
     },
     executeAction: function(actionName, actionInputs) {
@@ -113,19 +123,23 @@ ApmSapUtils.prototype = {
         }
     },
     getGlideRecords: function(tableName, queryParams, orderByParams) {
-        var glideRec = new GlideRecord(tableName);
-        if (!(gs.nil(queryParams))) {
-            Object.keys(queryParams).forEach(function(key) {
-                glideRec.addQuery(key.toString(), queryParams[key].toString());
-            });
+        try {
+            var glideRec = new GlideRecord(tableName);
+            if (!(gs.nil(queryParams))) {
+                Object.keys(queryParams).forEach(function(key) {
+                    glideRec.addQuery(key.toString(), queryParams[key].toString());
+                });
+            }
+            if (!(gs.nil(orderByParams))) {
+                orderByParams.forEach(function(param) {
+                    glideRec.orderBy(param.toString());
+                });
+            }
+            glideRec.query();
+            return glideRec;
+        } catch (e) {
+            throw new Error(e);
         }
-        if (!(gs.nil(orderByParams))) {
-            orderByParams.forEach(function(param) {
-                glideRec.orderBy(param.toString());
-            });
-        }
-        glideRec.query();
-        return glideRec;
     },
     checkIfIntegrationErrorExistsForIR: function(ir_sys_id) {
         var integrationErrorRecs = this.getGlideRecords('sn_shop_erp_error_task', {
@@ -142,12 +156,7 @@ ApmSapUtils.prototype = {
     getERPblanketLineNumberForIR: function(irlRec) {
         var supplierProduct = irlRec.order_line.supplier_product;
         var blanketPO = irlRec.invoice.purchase_order.blanket_order;
-        // var blanketPOL = new GlideRecord('sn_shop_purchase_order_line');
-        // blanketPOL.addQuery('purchase_order.sys_id',blanketPO);
-        // blanketPOL.addQuery('supplier_product.sys_id',supplierProduct);
-        // blanketPOL.query();
-        // blanketPOL.next();
-        var blanketPOL = new sn_apm_sap_int.ApmSapUtils().getGlideRecords('sn_shop_purchase_order_line', {
+        var blanketPOL = this.getGlideRecords('sn_shop_purchase_order_line', {
             purchase_order: blanketPO,
             supplier_product: supplierProduct
         });
@@ -156,39 +165,42 @@ ApmSapUtils.prototype = {
         }
     },
 
-	getEntrySheetNumber: function(irlRec){
-    var pol = irlRec.order_line;
-    var allInvoicesOfPOL = this.getGlideRecords('sn_shop_invoice_line',{order_line:pol},['number']);
-    var currentIrPosition = 1;
-    while(allInvoicesOfPOL.next()){
-        if(allInvoicesOfPOL.number == irlRec.number){
-        break;
+    getEntrySheetNumber: function(irlRec) {
+        var pol = irlRec.order_line;
+        var allInvoicesOfPOL = this.getGlideRecords('sn_shop_invoice_line', {
+            order_line: pol
+        }, ['number']);
+        var currentIrPosition = 1;
+        while (allInvoicesOfPOL.next()) {
+            if (allInvoicesOfPOL.number == irlRec.number) {
+                break;
+            } else
+                currentIrPosition++;
         }
-        else
-        currentIrPosition++;
-    }
 
-    var allReceiptOfPOL = this.getGlideRecords('sn_shop_receipt',{purchase_order_line:pol.sys_id},['number']);
-    var i=0;
-    while(i<currentIrPosition){
-        allReceiptOfPOL.next();
-        i++;
-    }
-    return allReceiptOfPOL.erp_gr_number;
-},
+        var allReceiptOfPOL = this.getGlideRecords('sn_shop_receipt', {
+            purchase_order_line: pol.sys_id
+        }, ['number']);
+        var index = 0;
+        while (index < currentIrPosition) {
+            allReceiptOfPOL.next();
+            index++;
+        }
+        return allReceiptOfPOL.erp_gr_number;
+    },
     type: 'ApmSapUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-14 09:32:05</sys_created_on>
         <sys_id>b356450d87b391102a18b846dabb3564</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>ApmSapUtils</sys_name>
         <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name>sys_script_include_b356450d87b391102a18b846dabb3564</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-22 06:02:11</sys_updated_on>
+        <sys_updated_on>2023-04-26 15:18:23</sys_updated_on>
     </sys_script_include>
 </record_update>
