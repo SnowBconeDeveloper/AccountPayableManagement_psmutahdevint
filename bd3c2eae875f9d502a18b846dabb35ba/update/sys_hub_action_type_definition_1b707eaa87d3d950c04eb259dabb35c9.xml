@@ -7,7 +7,7 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Invoice">fa72e2b4c32e29d01ab7b73a05013116</category>
         <copied_from>a5d75d9287539950c04eb259dabb35f0</copied_from>
         <copied_from_name>Generate ECC Invoice Payload</copied_from_name>
         <description/>
@@ -27,15 +27,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1b707eaa87d3d950c04eb259dabb35c9</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Generate ECC Invoice Payload</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_1b707eaa87d3d950c04eb259dabb35c9</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:14:48</sys_updated_on>
+        <sys_updated_on>2023-05-01 10:38:38</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -137,7 +137,7 @@
         <sys_created_on>2022-11-24 12:34:12</sys_created_on>
         <sys_id>6b707eaa87d3d950c04eb259dabb35d6</sys_id>
         <sys_mod_count>11</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-17 13:14:40</sys_updated_on>
     </sys_hub_step_instance>
@@ -212,21 +212,8 @@
         <table>var__m_sys_hub_step_ext_input_6b707eaa87d3d950c04eb259dabb35d6</table>
         <value>{{action.invoice_record}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>6b707eaa87d3d950c04eb259dabb35d6</id>
-        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
-        <sys_created_on>2023-04-17 13:03:18</sys_created_on>
-        <sys_id>4a1c9081475ae950c26f8945d36d4360</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:03:18</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_6b707eaa87d3d950c04eb259dabb35d6^id=6b707eaa87d3d950c04eb259dabb35d6"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=6b707eaa87d3d950c04eb259dabb35d6"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=6b707eaa87d3d950c04eb259dabb35d6"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=6b707eaa87d3d950c04eb259dabb35d6^sys_idNOT INaf707eaa87d3d950c04eb259dabb35d9"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -277,7 +264,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_shop_invoice">sn_shop_invoice</reference>
+        <reference display_value="">sn_shop_invoice</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -295,7 +282,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:19:59</sys_updated_on>
@@ -379,7 +366,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:13</sys_updated_on>
@@ -462,7 +449,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:13</sys_updated_on>
@@ -493,10 +480,10 @@
         <sys_created_on>2022-11-24 12:34:13</sys_created_on>
         <sys_id>b370beaa87d3d950c04eb259dabb3518</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Header</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:13</sys_updated_on>
@@ -516,10 +503,10 @@
         <sys_created_on>2022-11-24 12:34:13</sys_created_on>
         <sys_id>ff70beaa87d3d950c04eb259dabb3528</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Lines</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:13</sys_updated_on>
@@ -576,7 +563,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_shop_invoice">sn_shop_invoice</reference>
+        <reference display_value="">sn_shop_invoice</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -590,14 +577,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:34:12</sys_created_on>
         <sys_id>2b707eaa87d3d950c04eb259dabb35ce</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:34:12</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 07:46:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -677,14 +664,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>0080beaa87d3d950c04eb259dabb354f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 07:46:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -764,14 +751,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>0c80beaa87d3d950c04eb259dabb353b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:14:41</sys_updated_on>
+        <sys_updated_on>2023-04-30 07:49:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -851,14 +838,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>4c80beaa87d3d950c04eb259dabb3553</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 07:46:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -938,14 +925,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>8880beaa87d3d950c04eb259dabb3536</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 07:46:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -978,13 +965,13 @@
         <dont_treat_as_error>true</dont_treat_as_error>
         <label>Transform &amp; Prepare Payload step fails</label>
         <order>1</order>
-        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:20:01</sys_created_on>
         <sys_id>20c9726f87771d102a18b846dabb350c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:14:41</sys_updated_on>
+        <sys_updated_on>2023-04-30 07:46:42</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1b707eaa87d3d950c04eb259dabb35c9^sys_idNOT INeb707eaa87d3d950c04eb259dabb35d4"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -1000,10 +987,10 @@
         <sys_created_on>2022-11-24 12:34:12</sys_created_on>
         <sys_id>eb707eaa87d3d950c04eb259dabb35d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Record</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:12</sys_updated_on>
@@ -1025,10 +1012,10 @@
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>0080beaa87d3d950c04eb259dabb3558</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Lines</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
@@ -1048,10 +1035,10 @@
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>4080beaa87d3d950c04eb259dabb354e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
@@ -1071,10 +1058,10 @@
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>4c80beaa87d3d950c04eb259dabb353a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
@@ -1094,10 +1081,10 @@
         <sys_created_on>2022-11-24 12:34:14</sys_created_on>
         <sys_id>8c80beaa87d3d950c04eb259dabb3552</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Header</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2022-11-24 12:34:14</sys_updated_on>
@@ -1128,7 +1115,7 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Invoice">fa72e2b4c32e29d01ab7b73a05013116</category>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -1146,15 +1133,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edc9726f87771d102a18b846dabb35ab</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-09 08:20:33</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 07:49:37</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1168,10 +1155,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:20:08</sys_created_on>
         <sys_id>5ac9b26f87771d102a18b846dabb35a9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:14:48</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-04-30 07:49:40</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">5ac9b26f87771d102a18b846dabb3591</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1256,7 +1243,7 @@
         <sys_created_on>2022-12-22 12:20:06</sys_created_on>
         <sys_id>82c9b26f87771d102a18b846dabb3527</sys_id>
         <sys_mod_count>11</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-17 13:14:47</sys_updated_on>
     </sys_hub_step_instance>
@@ -1331,21 +1318,8 @@
         <table>var__m_sys_hub_step_ext_input_82c9b26f87771d102a18b846dabb3527</table>
         <value>{{action.invoice_record}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>82c9b26f87771d102a18b846dabb3527</id>
-        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
-        <sys_created_on>2023-04-17 13:03:26</sys_created_on>
-        <sys_id>3b1cd081475ae950c26f8945d36d430f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:03:26</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_82c9b26f87771d102a18b846dabb3527^id=82c9b26f87771d102a18b846dabb3527"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=82c9b26f87771d102a18b846dabb3527"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=82c9b26f87771d102a18b846dabb3527"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=82c9b26f87771d102a18b846dabb3527^sys_idNOT IN86c9b26f87771d102a18b846dabb352a"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1396,7 +1370,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_shop_invoice">sn_shop_invoice</reference>
+        <reference display_value="">sn_shop_invoice</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -1414,7 +1388,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:06</sys_updated_on>
@@ -1498,7 +1472,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:07</sys_updated_on>
@@ -1581,7 +1555,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:07</sys_updated_on>
@@ -1612,10 +1586,10 @@
         <sys_created_on>2022-12-22 12:20:07</sys_created_on>
         <sys_id>02c9b26f87771d102a18b846dabb355c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Header</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:07</sys_updated_on>
@@ -1635,10 +1609,10 @@
         <sys_created_on>2022-12-22 12:20:07</sys_created_on>
         <sys_id>06c9b26f87771d102a18b846dabb3560</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Lines</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:07</sys_updated_on>
@@ -1695,7 +1669,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_shop_invoice">sn_shop_invoice</reference>
+        <reference display_value="">sn_shop_invoice</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -1713,7 +1687,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:06</sys_updated_on>
@@ -1796,14 +1770,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:20:08</sys_created_on>
         <sys_id>1ac9b26f87771d102a18b846dabb3596</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:14:47</sys_updated_on>
+        <sys_updated_on>2023-04-30 07:49:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1887,7 +1861,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>
@@ -1974,7 +1948,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:07</sys_updated_on>
@@ -2061,7 +2035,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>
@@ -2090,20 +2064,20 @@
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=aec9b26f87771d102a18b846dabb35ac^sys_idNOT IN5ebed805475ae950c26f8945d36d43a6"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=aec9b26f87771d102a18b846dabb35ac^sys_idNOT IN5af0d20dc3ea69d01ab7b73a05013140"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2022-12-22 04:20:08">aec9b26f87771d102a18b846dabb35ac</action_status_metadata_id>
         <condition>{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.code}}!=0</condition>
         <dont_treat_as_error>true</dont_treat_as_error>
         <label>Transform &amp; Prepare Payload step fails</label>
         <order>1</order>
-        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
-        <sys_created_on>2023-04-17 13:14:48</sys_created_on>
-        <sys_id>5ebed805475ae950c26f8945d36d43a6</sys_id>
+        <sys_created_on>2023-04-30 07:49:40</sys_created_on>
+        <sys_id>5af0d20dc3ea69d01ab7b73a05013140</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:14:48</sys_updated_on>
+        <sys_updated_on>2023-04-30 07:49:40</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_edc9726f87771d102a18b846dabb35ab^sys_idNOT IN86c9726f87771d102a18b846dabb35b5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -2119,10 +2093,10 @@
         <sys_created_on>2022-12-22 12:20:06</sys_created_on>
         <sys_id>86c9726f87771d102a18b846dabb35b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Record</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:06</sys_updated_on>
@@ -2144,10 +2118,10 @@
         <sys_created_on>2022-12-22 12:20:08</sys_created_on>
         <sys_id>1ec9b26f87771d102a18b846dabb35a5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Lines</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>
@@ -2167,10 +2141,10 @@
         <sys_created_on>2022-12-22 12:20:08</sys_created_on>
         <sys_id>5ec9b26f87771d102a18b846dabb35a0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Invoice Header</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>
@@ -2190,10 +2164,10 @@
         <sys_created_on>2022-12-22 12:20:08</sys_created_on>
         <sys_id>9ac9b26f87771d102a18b846dabb3595</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Action Status</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>
@@ -2213,10 +2187,10 @@
         <sys_created_on>2022-12-22 12:20:08</sys_created_on>
         <sys_id>d2c9b26f87771d102a18b846dabb359c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Don't Treat as Error</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:20:08</sys_updated_on>

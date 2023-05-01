@@ -5,19 +5,19 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Invoice">fa72e2b4c32e29d01ab7b73a05013116</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Creates an invoice in SAP ECC.</description>
         <internal_name>create_invoice_in_sap_ecc</internal_name>
-        <label_cache>[{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.table_name","label":"1 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.record","label":"1 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.EV_INVOICEDOCNUMBER","label":"4➛Invoice Details➛Invoice Document No","type":"string","base_type":"string"},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.table_name","label":"10 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.record","label":"10 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item.INVOICE_DOC_ITEM","label":"10➛Item Data in Incoming Invoice [ IT_ITEMDATA ]_child0➛Invoice Item","type":"string","base_type":"string"},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item.erp_line_number","label":"9 - For Each➛Invoice Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_line","column_name":"erp_line_number"},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item","label":"9 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.IT_ITEMDATA","label":"4➛Invoice Details➛Item Data in Incoming Invoice [ IT_ITEMDATA ]","type":"array.object","base_type":"array.object","attributes":{"child_type":"object"}},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item","label":"9 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__dont_treat_as_error__","label":"8 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__action_status__","label":"8 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Count","label":"8 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Table","label":"8 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Records","label":"8 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.table_name","label":"7 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.record","label":"7 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.code","label":"3➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.err","label":"4 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.status","label":"4 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output","label":"4➛Invoice Details","reference_display":"Invoice Details","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e5aee09-c2a0-491d-a197-399d1861ce2b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__dont_treat_as_error__","label":"4 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__action_status__","label":"4 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__","label":"3 - Generate ECC Invoice Payload➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"a0c04dbd-07f4-4611-90c9-64ec7d96801b"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__dont_treat_as_error__","label":"3 - Generate ECC Invoice Payload➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"291b49d3-3843-4bd6-b483-b6bead43aced"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_header","label":"3 - Generate ECC Invoice Payload➛Invoice Header","reference_display":"Invoice Header","type":"object","base_type":"object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","uiTypeLabel":"Object","co_type_name":"FD92c9b26fd4771d10f1ba9aae7b205c8d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f5d15412-eda5-472c-b835-83ec3046474e","uiType":"object","uiUniqueId":"cc557759-0528-4062-80d2-7d4bdbeb9839"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_lines","label":"3 - Generate ECC Invoice Payload➛Invoice Lines","reference_display":"Invoice Lines","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","child_name":"Item","uiUniqueId":"1e44a8b2-fb08-4381-adce-8ec235684ff7","uiTypeLabel":"Array.Object","co_type_name":"FD56c9b26f65771d103b1c6c14940ef68f","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"170ed670-0d4d-40a9-9db1-371137af421a","uiType":"array.object","child_type":"object","child_uiUniqueId":"c2992b6b-4536-4b3a-8b03-ed9f452bf762"}},{"name":"subflow.psm_invoice_record","label":"Input➛PSM Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6bd52f6e-b2e1-4ea5-82d7-f22bb31d3ec1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.message","label":"3➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__","label":"21 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.code","label":"17➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.message","label":"17➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f281f8e7-e889-4d25-a4c0-5feb83e6d7c1.item","label":"3 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.invoice","label":"4 - Create Invoice➛Invoice","reference_display":"Invoice","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__action_status__","label":"5 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__dont_treat_as_error__","label":"5 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice","label":"5 - Create Invoice➛Invoice","reference_display":"Invoice","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.status","label":"5 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.err","label":"5 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice.EV_INVOICEDOCNUMBER","label":"5➛Invoice➛Invoice Document No","type":"string","base_type":"string"},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.context","label":"1 - Check Pre - Requisites➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.status","label":"1 - Check Pre - Requisites➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8f31b15-3400-43c5-9885-223d5e07b592"}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.output","label":"1 - Check Pre - Requisites➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"696adac1-394f-4334-86b1-cd545d685918"}},{"name":"subflow.connection_alias","label":"Input➛Connection Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e2e98227-a2c8-45b9-ae8f-50dac5af90a9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.psm_invoice_record.legal_entity.erp_source","label":"Input➛PSM Invoice Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Records","label":"13 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Table","label":"13 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Count","label":"13 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__action_status__","label":"13 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__dont_treat_as_error__","label":"13 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f9779199-990d-4203-8206-2db6e3fbdedd.item","label":"14 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.record","label":"15 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.table_name","label":"15 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__action_status__","label":"15 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__dont_treat_as_error__","label":"15 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__dont_treat_as_error__","label":"15 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__action_status__","label":"15 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.table_name","label":"15 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.record","label":"15 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f9779199-990d-4203-8206-2db6e3fbdedd.item","label":"14 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__dont_treat_as_error__","label":"13 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__action_status__","label":"13 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Count","label":"13 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Table","label":"13 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Records","label":"13 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_invoice_record.legal_entity.erp_source","label":"Input➛PSM Invoice Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"subflow.connection_alias","label":"Input➛Connection Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e2e98227-a2c8-45b9-ae8f-50dac5af90a9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.output","label":"1 - Check Pre-requisites for SAP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"696adac1-394f-4334-86b1-cd545d685918"}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.status","label":"1 - Check Pre-requisites for SAP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8f31b15-3400-43c5-9885-223d5e07b592"}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.context","label":"1 - Check Pre-requisites for SAP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice.EV_INVOICEDOCNUMBER","label":"5➛Invoice➛Invoice Document No","type":"string","base_type":"string"},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.err","label":"5 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.status","label":"5 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice","label":"5 - Create Invoice➛Invoice","reference_display":"Invoice","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__dont_treat_as_error__","label":"5 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__action_status__","label":"5 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.invoice","label":"4 - Create Invoice➛Invoice","reference_display":"Invoice","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f281f8e7-e889-4d25-a4c0-5feb83e6d7c1.item","label":"3 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.message","label":"17➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.code","label":"17➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__","label":"21 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.message","label":"3➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"subflow.psm_invoice_record","label":"Input➛PSM Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6bd52f6e-b2e1-4ea5-82d7-f22bb31d3ec1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_lines","label":"3 - Generate ECC Invoice Payload➛Invoice Lines","reference_display":"Invoice Lines","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","child_name":"Item","uiUniqueId":"1e44a8b2-fb08-4381-adce-8ec235684ff7","uiTypeLabel":"Array.Object","co_type_name":"FD56c9b26f65771d103b1c6c14940ef68f","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"170ed670-0d4d-40a9-9db1-371137af421a","uiType":"array.object","child_type":"object","child_uiUniqueId":"c2992b6b-4536-4b3a-8b03-ed9f452bf762"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_header","label":"3 - Generate ECC Invoice Payload➛Invoice Header","reference_display":"Invoice Header","type":"object","base_type":"object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","uiTypeLabel":"Object","co_type_name":"FD92c9b26fd4771d10f1ba9aae7b205c8d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f5d15412-eda5-472c-b835-83ec3046474e","uiType":"object","uiUniqueId":"cc557759-0528-4062-80d2-7d4bdbeb9839"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__dont_treat_as_error__","label":"3 - Generate ECC Invoice Payload➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"291b49d3-3843-4bd6-b483-b6bead43aced"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__","label":"3 - Generate ECC Invoice Payload➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"a0c04dbd-07f4-4611-90c9-64ec7d96801b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__action_status__","label":"4 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__dont_treat_as_error__","label":"4 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output","label":"4➛Invoice Details","reference_display":"Invoice Details","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e5aee09-c2a0-491d-a197-399d1861ce2b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.status","label":"4 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.err","label":"4 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.code","label":"3➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.record","label":"7 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.table_name","label":"7 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Records","label":"8 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Table","label":"8 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Count","label":"8 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__action_status__","label":"8 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__dont_treat_as_error__","label":"8 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item","label":"9 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.IT_ITEMDATA","label":"4➛Invoice Details➛Item Data in Incoming Invoice [ IT_ITEMDATA ]","type":"array.object","base_type":"array.object","attributes":{"child_type":"object"}},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item","label":"9 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item.erp_line_number","label":"9 - For Each➛Invoice Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_line","column_name":"erp_line_number"},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item.INVOICE_DOC_ITEM","label":"10➛Item Data in Incoming Invoice [ IT_ITEMDATA ]_child0➛Invoice Item","type":"string","base_type":"string"},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.record","label":"10 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.table_name","label":"10 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.EV_INVOICEDOCNUMBER","label":"4➛Invoice Details➛Invoice Document No","type":"string","base_type":"string"},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.record","label":"1 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.table_name","label":"1 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>81f0b5428754a110c04eb259dabb35e7</master_snapshot>
         <name>Create Invoice in SAP ECC</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
-        <run_as>system</run_as>
+        <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
@@ -29,15 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>794001cf877f59102a18b846dabb3581</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Create Invoice in SAP ECC</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name>sys_hub_flow_794001cf877f59102a18b846dabb3581</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-05-01 10:38:58</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=794001cf877f59102a18b846dabb3581"/>
@@ -108,7 +108,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_shop_invoice">sn_shop_invoice</reference>
+        <reference display_value="">sn_shop_invoice</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -122,14 +122,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:12:24</sys_created_on>
         <sys_id>0108f6ab87771d102a18b846dabb3512</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-22 12:12:24</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-29 14:28:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -205,14 +205,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:12:24</sys_created_on>
         <sys_id>4908beab87771d102a18b846dabb351a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-22 12:12:24</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-29 14:28:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -289,14 +289,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:12:24</sys_created_on>
         <sys_id>5508beab87771d102a18b846dabb3521</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -372,14 +372,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:12:25</sys_created_on>
         <sys_id>d908beab87771d102a18b846dabb3529</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-22 12:12:25</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-29 14:28:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -408,10 +408,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-22 12:22:06</sys_created_on>
         <sys_id>133afa6f87771d102a18b846dabb35a0</sys_id>
-        <sys_mod_count>60</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>7908495a-2422-4ca2-9070-a8bdba61b234</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=133afa6f87771d102a18b846dabb35a0"/>
@@ -432,8 +432,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=133afa6f87771d102a18b846dabb35a0"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Create Invoice">354fe14587fb51101dff337e0ebb358d</action_type>
+        <action_type display_value="">354fe14587fb51101dff337e0ebb358d</action_type>
         <action_type_parent/>
         <comment/>
         <display_text/>
@@ -444,10 +443,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-03-02 12:48:13</sys_created_on>
         <sys_id>148fd38a8751a9102a18b846dabb351e</sys_id>
-        <sys_mod_count>34</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>95762713-7c6b-4c3e-8bc9-667ec51ee8c7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=148fd38a8751a9102a18b846dabb351e"/>
@@ -463,7 +462,7 @@
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-11 08:04:28</sys_updated_on>
         <value>{"children":[],"type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}}</value>
-        <variable display_value="Invoice">90a8c2a5478d6550f8cfb777746d43c4</variable>
+        <variable display_value="">90a8c2a5478d6550f8cfb777746d43c4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -477,7 +476,7 @@
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-03-02 12:48:13</sys_updated_on>
         <value>ZSN_BAPI_INCOMINGINV_CREATE</value>
-        <variable display_value="Select BAPI">164fe14587fb51101dff337e0ebb359d</variable>
+        <variable display_value="">164fe14587fb51101dff337e0ebb359d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -491,69 +490,8 @@
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-11 07:56:39</sys_updated_on>
         <value/>
-        <variable display_value="Connection Alias">c8925dee8768e5501dff337e0ebb35fa</variable>
+        <variable display_value="">c8925dee8768e5501dff337e0ebb35fa</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=148fd38a8751a9102a18b846dabb351e"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conn_alias</field>
-        <id>148fd38a8751a9102a18b846dabb351e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:13</sys_created_on>
-        <sys_id>188fd38a8751a9102a18b846dabb3521</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-11 07:56:39</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value>{{subflow.connection_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>dynamic_hidden_input_invoice</field>
-        <id>148fd38a8751a9102a18b846dabb351e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:13</sys_created_on>
-        <sys_id>908fd38a8751a9102a18b846dabb3521</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>HEADERDATA</field>
-        <id>148fd38a8751a9102a18b846dabb351e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:13</sys_created_on>
-        <sys_id>548fd38a8751a9102a18b846dabb3521</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value>{{7908495a-2422-4ca2-9070-a8bdba61b234.invoice_header}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>ITEMDATA</field>
-        <id>148fd38a8751a9102a18b846dabb351e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:13</sys_created_on>
-        <sys_id>948fd38a8751a9102a18b846dabb3520</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value>{{7908495a-2422-4ca2-9070-a8bdba61b234.invoice_lines}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>select_bapi</field>
-        <id>148fd38a8751a9102a18b846dabb351e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:13</sys_created_on>
-        <sys_id>dc8fd38a8751a9102a18b846dabb3520</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:13</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value/>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=148fd38a8751a9102a18b846dabb351e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=148fd38a8751a9102a18b846dabb351e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -570,10 +508,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:14</sys_created_on>
         <sys_id>219ee769870e6110c04eb259dabb35e7</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>1bd1af2c-a24e-4d38-8567-2410fec53a88</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=219ee769870e6110c04eb259dabb35e7"/>
@@ -658,10 +596,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:07</sys_created_on>
         <sys_id>778ee769870e6110c04eb259dabb35dc</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>c4141291-2d10-4243-a7b0-0bb282c9016a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=778ee769870e6110c04eb259dabb35dc"/>
@@ -720,10 +658,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:07</sys_created_on>
         <sys_id>a57269c28714a110c04eb259dabb3577</sys_id>
-        <sys_mod_count>58</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>40b5e88b-c119-4f98-a1a6-ec49b7b8ad51</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a57269c28714a110c04eb259dabb3577"/>
@@ -821,10 +759,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:08</sys_created_on>
         <sys_id>b97269c28714a110c04eb259dabb359b</sys_id>
-        <sys_mod_count>58</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>eb7717ce-7ea0-4927-bd67-0d1f4099c916</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b97269c28714a110c04eb259dabb359b"/>
@@ -909,10 +847,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:07</sys_created_on>
         <sys_id>bd7269c28714a110c04eb259dabb358b</sys_id>
-        <sys_mod_count>58</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bd7269c28714a110c04eb259dabb358b"/>
@@ -966,16 +904,16 @@
         <inputs/>
         <order>1</order>
         <parent_ui_id>973c862e-adff-40e8-a79c-286c7567628d</parent_ui_id>
-        <subflow display_value="Check Pre - Requisites">f01bef65870e6110c04eb259dabb350d</subflow>
+        <subflow display_value="Check Pre-requisites for SAP">f01bef65870e6110c04eb259dabb350d</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:23:58</sys_created_on>
         <sys_id>218ee769870e6110c04eb259dabb3526</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>8d4b30a0-60f8-4a82-918f-59e5c9d55225</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=218ee769870e6110c04eb259dabb3526"/>
@@ -1087,7 +1025,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-11 07:54:30</sys_updated_on>
@@ -1127,10 +1065,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:06</sys_created_on>
         <sys_id>1d7269c28714a110c04eb259dabb3538</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>4239d5a7-7e34-4081-8dd2-dfd58f23961f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1199,10 +1137,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:20</sys_created_on>
         <sys_id>2fe075428754a110c04eb259dabb358f</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>973c862e-adff-40e8-a79c-286c7567628d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1233,10 +1171,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:07</sys_created_on>
         <sys_id>338ee769870e6110c04eb259dabb35df</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>f9779199-990d-4203-8206-2db6e3fbdedd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1279,10 +1217,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>37e075428754a110c04eb259dabb35c2</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>daf7a454-6002-4223-a0de-7cac6ce0ce81</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1313,10 +1251,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>3fe075428754a110c04eb259dabb35c4</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>c22e2942-d839-41ee-b4a9-a6fe74b8528f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1359,10 +1297,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>3fe075428754a110c04eb259dabb35cf</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>e918bbf7-d336-4346-add0-9bc655eb0207</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1405,10 +1343,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:23:59</sys_created_on>
         <sys_id>468ee769870e6110c04eb259dabb3548</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>fc1c6f77-ccfd-41ad-aab0-72bb35f02145</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1478,10 +1416,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:07</sys_created_on>
         <sys_id>657269c28714a110c04eb259dabb3570</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>6f53ed82-6c5a-4bb3-810f-3de533f0f139</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1550,10 +1488,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:08</sys_created_on>
         <sys_id>7d7269c28714a110c04eb259dabb359d</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>5826e4ea-de91-48af-815c-844d763de2fe</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1598,10 +1536,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:14</sys_created_on>
         <sys_id>e59e2b69870e6110c04eb259dabb356c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>97cdcb7e-52b6-4c95-8464-1f1e2082b937</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1643,10 +1581,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:14</sys_created_on>
         <sys_id>ed9e2b69870e6110c04eb259dabb3569</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>63b673e5-6b59-4785-b175-5f2c0eb9bd9b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1676,10 +1614,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>f3e075428754a110c04eb259dabb35bc</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>ab1c4bc8-69a9-4555-beb3-358058defa0f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1710,10 +1648,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 10:39:07</sys_created_on>
         <sys_id>f57269c28714a110c04eb259dabb358e</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:26</sys_updated_on>
         <ui_id>3bb7ba83-f12f-461c-bdc5-fc909b5f2465</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1757,10 +1695,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>fbe075428754a110c04eb259dabb35be</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>88c6a34e-b6fa-4219-9353-ae378cc7fc9c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1802,10 +1740,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>fbe075428754a110c04eb259dabb35c7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:42</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:27</sys_updated_on>
         <ui_id>2e3aa5c3-759d-4c6c-b61e-171723f96324</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1833,10 +1771,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:21</sys_created_on>
         <sys_id>ffe075428754a110c04eb259dabb35ca</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:26</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-04-29 14:29:11</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=fbe075428754a110c04eb259dabb35c7"/>
@@ -1859,10 +1797,10 @@
         <sys_created_on>2022-12-22 12:12:24</sys_created_on>
         <sys_id>0908beab87771d102a18b846dabb3519</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>PSM Invoice Record</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:12:24</sys_updated_on>
@@ -1882,10 +1820,10 @@
         <sys_created_on>2022-12-22 12:12:24</sys_created_on>
         <sys_id>c908beab87771d102a18b846dabb351e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Connection Alias</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:12:24</sys_updated_on>
@@ -1907,10 +1845,10 @@
         <sys_created_on>2022-12-22 12:12:25</sys_created_on>
         <sys_id>1108beab87771d102a18b846dabb3529</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Status</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:12:25</sys_updated_on>
@@ -1930,10 +1868,10 @@
         <sys_created_on>2022-12-22 12:12:25</sys_created_on>
         <sys_id>1108beab87771d102a18b846dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Error Message</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-12-22 12:12:25</sys_updated_on>
@@ -1986,7 +1924,7 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=794001cf877f59102a18b846dabb3581"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=794001cf877f59102a18b846dabb3581^sys_idNOT IN07f039428754a110c04eb259dabb35e7"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1bd9a05</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@12194ce</plan>
         <plan_id display_value="Create Invoice in SAP ECC">794001cf877f59102a18b846dabb3581</plan_id>
         <snapshot>81f0b5428754a110c04eb259dabb35e7</snapshot>
         <sys_created_by>satya</sys_created_by>
@@ -1994,11 +1932,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07f039428754a110c04eb259dabb35e7</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:41</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:25</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2006,19 +1944,19 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Invoice">fa72e2b4c32e29d01ab7b73a05013116</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Creates an invoice in SAP ECC.</description>
         <internal_name>create_invoice_in_sap_ecc</internal_name>
-        <label_cache>[{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.table_name","label":"1 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.record","label":"1 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.EV_INVOICEDOCNUMBER","label":"4➛Invoice Details➛Invoice Document No","type":"string","base_type":"string"},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.table_name","label":"10 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.record","label":"10 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item.INVOICE_DOC_ITEM","label":"10➛Item Data in Incoming Invoice [ IT_ITEMDATA ]_child0➛Invoice Item","type":"string","base_type":"string"},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item.erp_line_number","label":"9 - For Each➛Invoice Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_line","column_name":"erp_line_number"},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item","label":"9 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.IT_ITEMDATA","label":"4➛Invoice Details➛Item Data in Incoming Invoice [ IT_ITEMDATA ]","type":"array.object","base_type":"array.object","attributes":{"child_type":"object"}},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item","label":"9 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__dont_treat_as_error__","label":"8 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__action_status__","label":"8 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Count","label":"8 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Table","label":"8 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Records","label":"8 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.table_name","label":"7 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.record","label":"7 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.code","label":"3➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.err","label":"4 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.status","label":"4 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output","label":"4➛Invoice Details","reference_display":"Invoice Details","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e5aee09-c2a0-491d-a197-399d1861ce2b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__dont_treat_as_error__","label":"4 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__action_status__","label":"4 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__","label":"3 - Generate ECC Invoice Payload➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"a0c04dbd-07f4-4611-90c9-64ec7d96801b"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__dont_treat_as_error__","label":"3 - Generate ECC Invoice Payload➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"291b49d3-3843-4bd6-b483-b6bead43aced"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_header","label":"3 - Generate ECC Invoice Payload➛Invoice Header","reference_display":"Invoice Header","type":"object","base_type":"object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","uiTypeLabel":"Object","co_type_name":"FD92c9b26fd4771d10f1ba9aae7b205c8d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f5d15412-eda5-472c-b835-83ec3046474e","uiType":"object","uiUniqueId":"cc557759-0528-4062-80d2-7d4bdbeb9839"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_lines","label":"3 - Generate ECC Invoice Payload➛Invoice Lines","reference_display":"Invoice Lines","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","child_name":"Item","uiUniqueId":"1e44a8b2-fb08-4381-adce-8ec235684ff7","uiTypeLabel":"Array.Object","co_type_name":"FD56c9b26f65771d103b1c6c14940ef68f","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"170ed670-0d4d-40a9-9db1-371137af421a","uiType":"array.object","child_type":"object","child_uiUniqueId":"c2992b6b-4536-4b3a-8b03-ed9f452bf762"}},{"name":"subflow.psm_invoice_record","label":"Input➛PSM Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6bd52f6e-b2e1-4ea5-82d7-f22bb31d3ec1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.message","label":"3➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__","label":"21 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.code","label":"17➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.message","label":"17➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f281f8e7-e889-4d25-a4c0-5feb83e6d7c1.item","label":"3 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.invoice","label":"4 - Create Invoice➛Invoice","reference_display":"Invoice","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__action_status__","label":"5 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__dont_treat_as_error__","label":"5 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice","label":"5 - Create Invoice➛Invoice","reference_display":"Invoice","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.status","label":"5 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.err","label":"5 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice.EV_INVOICEDOCNUMBER","label":"5➛Invoice➛Invoice Document No","type":"string","base_type":"string"},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.context","label":"1 - Check Pre - Requisites➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.status","label":"1 - Check Pre - Requisites➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8f31b15-3400-43c5-9885-223d5e07b592"}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.output","label":"1 - Check Pre - Requisites➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"696adac1-394f-4334-86b1-cd545d685918"}},{"name":"subflow.connection_alias","label":"Input➛Connection Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e2e98227-a2c8-45b9-ae8f-50dac5af90a9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.psm_invoice_record.legal_entity.erp_source","label":"Input➛PSM Invoice Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Records","label":"13 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Table","label":"13 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Count","label":"13 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__action_status__","label":"13 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__dont_treat_as_error__","label":"13 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f9779199-990d-4203-8206-2db6e3fbdedd.item","label":"14 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.record","label":"15 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.table_name","label":"15 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__action_status__","label":"15 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__dont_treat_as_error__","label":"15 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <label_cache>[{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__dont_treat_as_error__","label":"15 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.__action_status__","label":"15 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.table_name","label":"15 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1bd1af2c-a24e-4d38-8567-2410fec53a88.record","label":"15 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f9779199-990d-4203-8206-2db6e3fbdedd.item","label":"14 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__dont_treat_as_error__","label":"13 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.__action_status__","label":"13 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Count","label":"13 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Table","label":"13 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4141291-2d10-4243-a7b0-0bb282c9016a.Records","label":"13 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_invoice_record.legal_entity.erp_source","label":"Input➛PSM Invoice Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"subflow.connection_alias","label":"Input➛Connection Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e2e98227-a2c8-45b9-ae8f-50dac5af90a9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.output","label":"1 - Check Pre-requisites for SAP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"696adac1-394f-4334-86b1-cd545d685918"}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.status","label":"1 - Check Pre-requisites for SAP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8f31b15-3400-43c5-9885-223d5e07b592"}},{"name":"8d4b30a0-60f8-4a82-918f-59e5c9d55225.context","label":"1 - Check Pre-requisites for SAP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice.EV_INVOICEDOCNUMBER","label":"5➛Invoice➛Invoice Document No","type":"string","base_type":"string"},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.err","label":"5 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.status","label":"5 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.invoice","label":"5 - Create Invoice➛Invoice","reference_display":"Invoice","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__dont_treat_as_error__","label":"5 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"95762713-7c6b-4c3e-8bc9-667ec51ee8c7.__action_status__","label":"5 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.invoice","label":"4 - Create Invoice➛Invoice","reference_display":"Invoice","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.table_name","label":"4 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"592c2431-d8c6-44d1-9f8c-6e1a84f17b64.record","label":"4 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f281f8e7-e889-4d25-a4c0-5feb83e6d7c1.item","label":"3 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2108c2d6-922c-4916-bf11-dfc30de5fd81.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.message","label":"17➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__.code","label":"17➛Error Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"2e3aa5c3-759d-4c6c-b61e-171723f96324.__status__","label":"21 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.message","label":"3➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"subflow.psm_invoice_record","label":"Input➛PSM Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6bd52f6e-b2e1-4ea5-82d7-f22bb31d3ec1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_lines","label":"3 - Generate ECC Invoice Payload➛Invoice Lines","reference_display":"Invoice Lines","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","child_name":"Item","uiUniqueId":"1e44a8b2-fb08-4381-adce-8ec235684ff7","uiTypeLabel":"Array.Object","co_type_name":"FD56c9b26f65771d103b1c6c14940ef68f","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"170ed670-0d4d-40a9-9db1-371137af421a","uiType":"array.object","child_type":"object","child_uiUniqueId":"c2992b6b-4536-4b3a-8b03-ed9f452bf762"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.invoice_header","label":"3 - Generate ECC Invoice Payload➛Invoice Header","reference_display":"Invoice Header","type":"object","base_type":"object","attributes":{"sourceId":"8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18","uiTypeLabel":"Object","co_type_name":"FD92c9b26fd4771d10f1ba9aae7b205c8d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f5d15412-eda5-472c-b835-83ec3046474e","uiType":"object","uiUniqueId":"cc557759-0528-4062-80d2-7d4bdbeb9839"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__dont_treat_as_error__","label":"3 - Generate ECC Invoice Payload➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"291b49d3-3843-4bd6-b483-b6bead43aced"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__","label":"3 - Generate ECC Invoice Payload➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"a0c04dbd-07f4-4611-90c9-64ec7d96801b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__action_status__","label":"4 - Create Invoice➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"89f7d4ef-5aa6-48b6-bf29-da892b148349"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.__dont_treat_as_error__","label":"4 - Create Invoice➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"1efa05f6-aa6f-4e6a-8c51-600b741ee5ad"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output","label":"4➛Invoice Details","reference_display":"Invoice Details","type":"dynamic_object","base_type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e5aee09-c2a0-491d-a197-399d1861ce2b"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.status","label":"4 - Create Invoice➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0188e07-a193-4235-a7c3-ff02afdd0d09"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.err","label":"4 - Create Invoice➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ac02558c-0279-4f48-9562-4b2eda040f1b"}},{"name":"7908495a-2422-4ca2-9070-a8bdba61b234.__action_status__.code","label":"3➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.record","label":"7 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.table_name","label":"7 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"40b5e88b-c119-4f98-a1a6-ec49b7b8ad51.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Records","label":"8 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Table","label":"8 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.Count","label":"8 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__action_status__","label":"8 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0.__dont_treat_as_error__","label":"8 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item","label":"9 - For Each➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.IT_ITEMDATA","label":"4➛Invoice Details➛Item Data in Incoming Invoice [ IT_ITEMDATA ]","type":"array.object","base_type":"array.object","attributes":{"child_type":"object"}},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item","label":"9 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"3bb7ba83-f12f-461c-bdc5-fc909b5f2465.item.erp_line_number","label":"9 - For Each➛Invoice Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_line","column_name":"erp_line_number"},{"name":"e679348d-fd82-4cca-b2cd-af48a501ca5b.item.INVOICE_DOC_ITEM","label":"10➛Item Data in Incoming Invoice [ IT_ITEMDATA ]_child0➛Invoice Item","type":"string","base_type":"string"},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.record","label":"10 - Update Record➛Invoice Line Record","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.table_name","label":"10 - Update Record➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"eb7717ce-7ea0-4927-bd67-0d1f4099c916.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"26dd78e6-f429-4b57-9a0c-f5592d8060c1.output.EV_INVOICEDOCNUMBER","label":"4➛Invoice Details➛Invoice Document No","type":"string","base_type":"string"},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.record","label":"1 - Update Record➛Invoice Record","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.table_name","label":"1 - Update Record➛Invoice Table","reference":"sn_shop_invoice","reference_display":"Invoice","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7b3d4809-b84e-45ba-8ccd-efd260dd47b8.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Records","label":"2 - Look Up Records➛Invoice Line Records","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Table","label":"2 - Look Up Records➛Invoice Line Table","reference":"sn_shop_invoice_line","reference_display":"Invoice Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"05035e2d-f911-4cae-a825-87d25e92f7e1.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Create Invoice in SAP ECC</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="Create Invoice in SAP ECC">794001cf877f59102a18b846dabb3581</parent_flow>
         <remote_trigger_id/>
-        <run_as>system</run_as>
+        <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
@@ -2028,15 +1966,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81f0b5428754a110c04eb259dabb35e7</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:37</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=81f0b5428754a110c04eb259dabb35e7"/>
@@ -2107,7 +2045,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sn_shop_invoice">sn_shop_invoice</reference>
+        <reference display_value="">sn_shop_invoice</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -2121,14 +2059,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:26</sys_created_on>
         <sys_id>89f0b5428754a110c04eb259dabb35e9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2204,14 +2142,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>95f0f5428754a110c04eb259dabb354f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2288,14 +2226,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>25f0f5428754a110c04eb259dabb3578</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2371,14 +2309,14 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>95f0f5428754a110c04eb259dabb355c</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:35</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2407,10 +2345,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:29</sys_created_on>
         <sys_id>35f0f5428754a110c04eb259dabb35b9</sys_id>
-        <sys_mod_count>30</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>7908495a-2422-4ca2-9070-a8bdba61b234</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=35f0f5428754a110c04eb259dabb35b9"/>
@@ -2443,10 +2381,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:30</sys_created_on>
         <sys_id>46f0f5428754a110c04eb259dabb35ed</sys_id>
-        <sys_mod_count>30</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>eb7717ce-7ea0-4927-bd67-0d1f4099c916</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=46f0f5428754a110c04eb259dabb35ed"/>
@@ -2519,9 +2457,8 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=46f0f5428754a110c04eb259dabb35ed"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Create Invoice">354fe14587fb51101dff337e0ebb358d</action_type>
-        <action_type_parent display_value="Create Invoice">74408d89977f5110215b35471153af61</action_type_parent>
+        <action_type display_value="">354fe14587fb51101dff337e0ebb358d</action_type>
+        <action_type_parent display_value="">74408d89977f5110215b35471153af61</action_type_parent>
         <comment/>
         <display_text/>
         <flow display_value="Create Invoice in SAP ECC">81f0b5428754a110c04eb259dabb35e7</flow>
@@ -2531,10 +2468,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-03-02 12:48:34</sys_created_on>
         <sys_id>699f978a8751a9102a18b846dabb352d</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>95762713-7c6b-4c3e-8bc9-667ec51ee8c7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=699f978a8751a9102a18b846dabb352d"/>
@@ -2550,7 +2487,7 @@
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-11 07:56:48</sys_updated_on>
         <value/>
-        <variable display_value="Connection Alias">c8925dee8768e5501dff337e0ebb35fa</variable>
+        <variable display_value="">c8925dee8768e5501dff337e0ebb35fa</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -2564,7 +2501,7 @@
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-17 13:39:34</sys_updated_on>
         <value>{"children":[],"type":"dynamic_object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7b2edb72-764a-4ad0-a94d-0bbdb91c8590"}}</value>
-        <variable display_value="Invoice">90a8c2a5478d6550f8cfb777746d43c4</variable>
+        <variable display_value="">90a8c2a5478d6550f8cfb777746d43c4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -2578,69 +2515,8 @@
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-03-02 12:48:34</sys_updated_on>
         <value>ZSN_BAPI_INCOMINGINV_CREATE</value>
-        <variable display_value="Select BAPI">164fe14587fb51101dff337e0ebb359d</variable>
+        <variable display_value="">164fe14587fb51101dff337e0ebb359d</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=699f978a8751a9102a18b846dabb352d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conn_alias</field>
-        <id>699f978a8751a9102a18b846dabb352d</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:34</sys_created_on>
-        <sys_id>6d9f978a8751a9102a18b846dabb352f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-11 07:56:48</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value>{{subflow.connection_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>dynamic_hidden_input_invoice</field>
-        <id>699f978a8751a9102a18b846dabb352d</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:34</sys_created_on>
-        <sys_id>e59f978a8751a9102a18b846dabb352f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:34</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>HEADERDATA</field>
-        <id>699f978a8751a9102a18b846dabb352d</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:34</sys_created_on>
-        <sys_id>a99f978a8751a9102a18b846dabb352f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:34</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value>{{7908495a-2422-4ca2-9070-a8bdba61b234.invoice_header}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>ITEMDATA</field>
-        <id>699f978a8751a9102a18b846dabb352d</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:34</sys_created_on>
-        <sys_id>619f978a8751a9102a18b846dabb352f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:34</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value>{{7908495a-2422-4ca2-9070-a8bdba61b234.invoice_lines}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>select_bapi</field>
-        <id>699f978a8751a9102a18b846dabb352d</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-02 12:48:34</sys_created_on>
-        <sys_id>259f978a8751a9102a18b846dabb352f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-02 12:48:34</sys_updated_on>
-        <table>var__m_sys_hub_action_input_354fe14587fb51101dff337e0ebb358d</table>
-        <value/>
-    </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=699f978a8751a9102a18b846dabb352d"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=699f978a8751a9102a18b846dabb352d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -2657,10 +2533,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:30</sys_created_on>
         <sys_id>86f0f5428754a110c04eb259dabb35dd</sys_id>
-        <sys_mod_count>30</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>40b5e88b-c119-4f98-a1a6-ec49b7b8ad51</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=86f0f5428754a110c04eb259dabb35dd"/>
@@ -2758,10 +2634,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:49</sys_created_on>
         <sys_id>8ebeeb69870e6110c04eb259dabb3533</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>1bd1af2c-a24e-4d38-8567-2410fec53a88</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8ebeeb69870e6110c04eb259dabb3533"/>
@@ -2846,10 +2722,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:30</sys_created_on>
         <sys_id>c2f0f5428754a110c04eb259dabb35e7</sys_id>
-        <sys_mod_count>30</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>10c7e82b-81cc-4f1f-8ee0-4144c8b2f1f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c2f0f5428754a110c04eb259dabb35e7"/>
@@ -2908,10 +2784,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:43</sys_created_on>
         <sys_id>ecbeeb69870e6110c04eb259dabb352c</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>c4141291-2d10-4243-a7b0-0bb282c9016a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ecbeeb69870e6110c04eb259dabb352c"/>
@@ -2965,16 +2841,16 @@
         <inputs/>
         <order>1</order>
         <parent_ui_id>973c862e-adff-40e8-a79c-286c7567628d</parent_ui_id>
-        <subflow display_value="Check Pre - Requisites">f01bef65870e6110c04eb259dabb350d</subflow>
+        <subflow display_value="Check Pre-requisites for SAP">f01bef65870e6110c04eb259dabb350d</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:50</sys_created_on>
         <sys_id>52be2f69870e6110c04eb259dabb3584</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>8d4b30a0-60f8-4a82-918f-59e5c9d55225</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=52be2f69870e6110c04eb259dabb3584"/>
@@ -3086,7 +2962,7 @@
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
         <sys_updated_on>2023-04-11 07:54:41</sys_updated_on>
@@ -3126,10 +3002,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>21f0f5428754a110c04eb259dabb35ad</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:37</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <ui_id>e918bbf7-d336-4346-add0-9bc655eb0207</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3171,10 +3047,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>2df0f5428754a110c04eb259dabb3596</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>5826e4ea-de91-48af-815c-844d763de2fe</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3219,10 +3095,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>2df0f5428754a110c04eb259dabb35a2</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <ui_id>c22e2942-d839-41ee-b4a9-a6fe74b8528f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3264,10 +3140,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>2df0f5428754a110c04eb259dabb35a5</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:37</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <ui_id>2e3aa5c3-759d-4c6c-b61e-171723f96324</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3295,10 +3171,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>6df0f5428754a110c04eb259dabb35a8</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:35</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-04-29 14:29:19</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=2df0f5428754a110c04eb259dabb35a5"/>
@@ -3326,10 +3202,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>69f0f5428754a110c04eb259dabb3582</sys_id>
-        <sys_mod_count>19</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>973c862e-adff-40e8-a79c-286c7567628d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3360,10 +3236,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:49</sys_created_on>
         <sys_id>82be2f69870e6110c04eb259dabb3553</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>f9779199-990d-4203-8206-2db6e3fbdedd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3406,10 +3282,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:50</sys_created_on>
         <sys_id>96be2f69870e6110c04eb259dabb3572</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:37</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <ui_id>63b673e5-6b59-4785-b175-5f2c0eb9bd9b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3440,10 +3316,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>a5f0f5428754a110c04eb259dabb3589</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>6f53ed82-6c5a-4bb3-810f-3de533f0f139</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3513,10 +3389,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>a9f0f5428754a110c04eb259dabb3585</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>4239d5a7-7e34-4081-8dd2-dfd58f23961f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3586,10 +3462,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>adf0f5428754a110c04eb259dabb358c</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>3bb7ba83-f12f-461c-bdc5-fc909b5f2465</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3633,10 +3509,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:49</sys_created_on>
         <sys_id>c2be2f69870e6110c04eb259dabb351b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>fc1c6f77-ccfd-41ad-aab0-72bb35f02145</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3706,10 +3582,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-07 07:24:50</sys_created_on>
         <sys_id>debe2f69870e6110c04eb259dabb3574</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:37</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <ui_id>97cdcb7e-52b6-4c95-8464-1f1e2082b937</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3752,10 +3628,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>e1f0f5428754a110c04eb259dabb359d</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>88c6a34e-b6fa-4219-9353-ae378cc7fc9c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3797,10 +3673,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>e1f0f5428754a110c04eb259dabb35a0</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:21</sys_updated_on>
         <ui_id>daf7a454-6002-4223-a0de-7cac6ce0ce81</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3830,10 +3706,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 11:42:28</sys_created_on>
         <sys_id>e5f0f5428754a110c04eb259dabb359a</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-17 13:39:36</sys_updated_on>
+        <sys_updated_on>2023-04-29 14:29:20</sys_updated_on>
         <ui_id>ab1c4bc8-69a9-4555-beb3-358058defa0f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3858,10 +3734,10 @@
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>19f0f5428754a110c04eb259dabb3557</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Connection Alias</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>
@@ -3881,10 +3757,10 @@
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>1df0f5428754a110c04eb259dabb354b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>PSM Invoice Record</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>
@@ -3906,10 +3782,10 @@
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>69f0f5428754a110c04eb259dabb357c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Error Message</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>
@@ -3929,10 +3805,10 @@
         <sys_created_on>2023-01-11 11:42:27</sys_created_on>
         <sys_id>edf0f5428754a110c04eb259dabb3574</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Accounts Payables Management integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
+        <sys_name>Status</sys_name>
+        <sys_package display_value="Accounts Payable Operations Integration with SAP" source="sn_apm_sap_int">bd3c2eae875f9d502a18b846dabb35ba</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Accounts Payables Management integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
+        <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 11:42:27</sys_updated_on>

@@ -7,7 +7,7 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Invoice">fa72e2b4c32e29d01ab7b73a05013116</category>
         <copied_from>00c046ee8713d950c04eb259dabb35a2</copied_from>
         <copied_from_name>Generate HANA Invoice Payload</copied_from_name>
         <description/>
@@ -35,7 +35,7 @@
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_cbf1762e87d3d950c04eb259dabb35f1</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 11:49:09</sys_updated_on>
+        <sys_updated_on>2023-05-01 10:38:50</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -226,7 +226,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Record</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -285,14 +285,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:40:45</sys_created_on>
         <sys_id>27f1b62e87d3d950c04eb259dabb3540</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 08:47:02</sys_updated_on>
+        <sys_updated_on>2023-04-30 08:45:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -584,14 +584,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:40:45</sys_created_on>
         <sys_id>9ff1b62e87d3d950c04eb259dabb3534</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:40:45</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 08:45:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -671,14 +671,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:40:51</sys_created_on>
         <sys_id>0d02b62e87d3d950c04eb259dabb35da</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:40:51</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 08:45:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -758,14 +758,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:40:52</sys_created_on>
         <sys_id>4902b62e87d3d950c04eb259dabb35df</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:40:52</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 08:45:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -845,14 +845,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:40:50</sys_created_on>
         <sys_id>7002b62e87d3d950c04eb259dabb35bb</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 08:47:03</sys_updated_on>
+        <sys_updated_on>2023-04-30 08:45:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -932,14 +932,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-11-24 12:40:50</sys_created_on>
         <sys_id>ec02b62e87d3d950c04eb259dabb35b5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>Akash</sys_updated_by>
-        <sys_updated_on>2022-11-24 12:40:50</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-30 08:45:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1103,17 +1103,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Generate Hana Invoice Payload">cbf1762e87d3d950c04eb259dabb35f1</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d587c3628765a5102a18b846dabb35ea","name":"plan","plan_signature":null}}</plan>
-        <snapshot>7a3039fa471aa190c26f8945d36d433c</snapshot>
+        <snapshot>1651c30c476ae590c26f8945d36d431d</snapshot>
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-03-16 10:36:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d587c3628765a5102a18b846dabb35ea</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-23 05:40:20</sys_updated_on>
+        <sys_updated_on>2023-04-27 08:47:07</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1122,7 +1122,7 @@
         <action_template/>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Invoice">fa72e2b4c32e29d01ab7b73a05013116</category>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -1140,7 +1140,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>de7743628765a5102a18b846dabb355c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1148,7 +1148,7 @@
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 08:47:05</sys_updated_on>
+        <sys_updated_on>2023-04-30 08:45:52</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1339,7 +1339,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Record</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1398,14 +1398,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-03-16 10:35:59</sys_created_on>
         <sys_id>bb7783628765a5102a18b846dabb353f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 08:47:05</sys_updated_on>
+        <sys_updated_on>2023-04-30 08:45:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1871,14 +1871,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-03-16 10:36:00</sys_created_on>
         <sys_id>808783628765a5102a18b846dabb3579</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Accounts Payable Operations Integration with SAP">bd3c2eae875f9d502a18b846dabb35ba</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 08:47:06</sys_updated_on>
+        <sys_updated_on>2023-04-30 08:45:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2078,7 +2078,7 @@
         <sys_updated_by>Akash</sys_updated_by>
         <sys_updated_on>2023-03-16 10:36:01</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=508783628765a5102a18b846dabb359b^sys_idNOT INd651c30c476ae590c26f8945d36d431c"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=508783628765a5102a18b846dabb359b^sys_idNOT INb9ddd20dc32e69d01ab7b73a050131f4"/>
     <sys_hub_status_condition action="INSERT_OR_UPDATE">
         <action_status_metadata_id display_value="Created 2023-03-16 03:36:01">508783628765a5102a18b846dabb359b</action_status_metadata_id>
         <condition>{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.code}}!=0</condition>
@@ -2087,11 +2087,11 @@
         <order>1</order>
         <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"1"}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"message\\\":\\\"{{step[8c68f990-7a7d-4df8-b2e6-c0ac0ae48a18].__step_status__.message}}\\\"}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
-        <sys_created_on>2023-04-27 08:47:06</sys_created_on>
-        <sys_id>d651c30c476ae590c26f8945d36d431c</sys_id>
+        <sys_created_on>2023-04-30 08:45:53</sys_created_on>
+        <sys_id>b9ddd20dc32e69d01ab7b73a050131f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-27 08:47:06</sys_updated_on>
+        <sys_updated_on>2023-04-30 08:45:53</sys_updated_on>
     </sys_hub_status_condition>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_de7743628765a5102a18b846dabb355c^sys_idNOT INb77783628765a5102a18b846dabb353a"/>
     <sys_documentation action="INSERT_OR_UPDATE">
